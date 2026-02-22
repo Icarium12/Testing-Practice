@@ -1,6 +1,7 @@
 const capitalize = require('./capitalize');
 const reverse = require('./reverse');
 const calculator = require('./calculator');
+const caesarShift = require('./caesarShift');
 
 test('converts my name to uppercase', () => {
     expect(capitalize('praisemogaji')).toBe("PRAISEMOGAJI");
@@ -16,4 +17,8 @@ test('calculator methods', () => {
     expect(calculator.subtract(2, 1)).toBe(1);
     expect(calculator.multiply(2, 3)).toBe(6);
     expect(calculator.divide(6, 3)).toBe(2);
+})
+
+test('caesar shift cipher', () => {
+    expect(caesarShift('xyz', 3)).toBe('abc');
 })
