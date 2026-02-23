@@ -21,4 +21,6 @@ test('calculator methods', () => {
 
 test('caesar shift cipher', () => {
     expect(caesarShift('xyz', 3)).toBe('abc');
+    expect(caesarShift('heLLo', 3)).toBe('khOOr');
+    expect(caesarShift('Hello World!', 3)).toBe('Khoor Zruog!');
 })
