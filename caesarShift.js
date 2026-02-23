@@ -51,7 +51,6 @@ function caesarShift(string, number) {
             stringArr.splice(chars[j].index, 0, chars[j].value);
         }
 
-        console.log(index);
         final.push(stringArr.join(""));
     }
     
@@ -71,6 +70,5 @@ class Char{
     }
 }
 
-console.log(caesarShift('HeLLo world!', 3));
 module.exports = caesarShift;
 
